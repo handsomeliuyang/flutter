@@ -46,10 +46,10 @@ class CleanCommand extends FlutterCommand {
     deleteFile(flutterProject.dartTool);
 
     final Directory androidEphemeralDirectory = flutterProject.android.ephemeralDirectory;
-    deleteFile(androidEphemeralDirectory);
+//    deleteFile(androidEphemeralDirectory);
 
     final Directory iosEphemeralDirectory = flutterProject.ios.ephemeralDirectory;
-    deleteFile(iosEphemeralDirectory);
+//    deleteFile(iosEphemeralDirectory);
 
     final Directory linuxEphemeralDirectory = flutterProject.linux.ephemeralDirectory;
     deleteFile(linuxEphemeralDirectory);
