@@ -624,19 +624,20 @@ class GitTagVersion {
   }
 
   String frameworkVersionFor(String revision) {
-    if (x == null || y == null || z == null || !revision.startsWith(hash)) {
-      return '0.0.0-unknown';
-    }
-    if (commits == 0) {
-      if (hotfix != null) {
-        return '$x.$y.$z+hotfix.$hotfix';
-      }
-      return '$x.$y.$z';
-    }
-    if (hotfix != null) {
-      return '$x.$y.$z+hotfix.${hotfix + 1}-pre.$commits';
-    }
-    return '$x.$y.${z + 1}-pre.$commits';
+    return '1.10.5-ly';
+//    if (x == null || y == null || z == null || !revision.startsWith(hash)) {
+//      return '0.0.0-unknown';
+//    }
+//    if (commits == 0) {
+//      if (hotfix != null) {
+//        return '$x.$y.$z+hotfix.$hotfix';
+//      }
+//      return '$x.$y.$z';
+//    }
+//    if (hotfix != null) {
+//      return '$x.$y.$z+hotfix.${hotfix + 1}-pre.$commits';
+//    }
+//    return '$x.$y.${z + 1}-pre.$commits';
   }
 }
 

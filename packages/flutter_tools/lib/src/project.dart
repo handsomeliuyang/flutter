@@ -577,8 +577,9 @@ class AndroidProject {
   }
 
   bool _shouldRegenerateFromTemplate() {
-    return isOlderThanReference(entity: ephemeralDirectory, referenceFile: parent.pubspecFile)
-        || Cache.instance.isOlderThanToolsStamp(ephemeralDirectory);
+//    return isOlderThanReference(entity: ephemeralDirectory, referenceFile: parent.pubspecFile)
+//        || Cache.instance.isOlderThanToolsStamp(ephemeralDirectory);
+      return false;
   }
 
   Future<void> makeHostAppEditable() async {
